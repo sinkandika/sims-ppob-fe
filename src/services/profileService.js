@@ -2,7 +2,6 @@ import api from "./api";
 
 // get API for profile
 
-// profile (https://take-home-test-api.nutech-integrasi.com/profile)
 export const getProfile = async () => {
   try {
     const response = await api.get("/profile");

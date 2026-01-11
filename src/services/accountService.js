@@ -2,7 +2,6 @@ import api from "./api"
 
 // get API for profile update
 
-// profile update (https://take-home-test-api.nutech-integrasi.com/profile/update)
 export const updateProfile = async (firstName, lastName) => {
   try {
     const response = await api.put("/profile/update", {
@@ -23,7 +22,6 @@ export const updateProfile = async (firstName, lastName) => {
   }
 };
 
-// image update (https://take-home-test-api.nutech-integrasi.com/profile/image)
 export const updateImage = async (imgUpd) => {
   try {
     const imageData = new FormData();
