@@ -4,7 +4,7 @@ import { getToken, removeToken } from "./tokenService";
 // base API using axios
 
 const api = axios.create({
-  baseURL: "https://take-home-test-api.nutech-integrasi.com",
+  baseURL: import.meta.env.VITE_API_BASE_URL,
   headers: {
     "Content-Type": "application/json",
     accept: "application/json",
